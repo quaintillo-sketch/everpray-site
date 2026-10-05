@@ -1,6 +1,6 @@
 # prayday-site
 
-Public website for PrayDay: home page, Privacy Policy and Terms of Service.
+Public website for EverPray: home page, Privacy Policy and Terms of Service.
 Plain HTML + CSS, published with GitHub Pages from the `main` branch root.
 
 - `index.html`: home page
