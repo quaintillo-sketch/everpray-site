@@ -3,40 +3,289 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EverPray · Personal prayer, every day</title>
-<meta name="description" content="EverPray helps you put what's on your heart into words and grow closer to God through prayer.">
+<title>EverPray — A personal prayer for wherever you are today</title>
+<meta name="description" content="EverPray is a Christian and Catholic prayer app for iPhone. Share what's on your heart and receive a personal prayer, written for you.">
+<link rel="canonical" href="https://everprayapp.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EverPray">
+<meta property="og:title" content="EverPray — A personal prayer for wherever you are today">
+<meta property="og:description" content="EverPray is a Christian and Catholic prayer app for iPhone. Share what's on your heart and receive a personal prayer, written for you.">
+<meta property="og:url" content="https://everprayapp.com/">
+<meta property="og:image" content="https://everprayapp.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A soft painted morning sky over green hills">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F2EA">
 <link rel="icon" href="assets/app-icon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Jost:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
 </head>
 <body>
-<header class="sky">
-  <nav>
-    <a href="./"><img src="assets/logo-everpray.svg" alt="EverPray"></a>
-    <div class="links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:support@everprayapp.com">Contact</a></div>
-  </nav>
+<div class="page">
+
+<header class="site-header">
+  <a href="#top" class="site-header__logo" aria-label="EverPray home">
+    <img src="assets/logo.svg" alt="EverPray" width="157" height="44">
+  </a>
+  <a href="#download" class="pill-link">Get the app</a>
 </header>
 
-<main>
-  <section class="hero">
-    <img class="sun" src="assets/sun-icon.png" alt="">
-    <p class="kicker" style="margin-top:18px">Coming soon to the App Store</p>
-    <h1>A simple way to make prayer part of your day.</h1>
-    <p>Prayer doesn’t always come easily. EverPray gently guides you through what’s on your heart and turns it into a meaningful, personal prayer.</p>
-  </section>
+<main id="top">
 
-  <section class="cards">
-    <div class="card"><h3>Check in</h3><p>Reflect on how you’re feeling, what you’re grateful for, and what you need today.</p></div>
-    <div class="card"><h3>Pray</h3><p>Your reflections become a personal prayer, written around what’s actually on your heart.</p></div>
-    <div class="card"><h3>Remember</h3><p>Save what you’re praying for, return to past prayers, and remember the ways God has answered.</p></div>
-  </section>
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <img src="assets/hero-sky-landscape.jpg" alt="" width="2400" height="1800" fetchpriority="high">
+  </div>
+  <div class="hero__wash" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow hero__eyebrow">Christian &amp; Catholic prayer for iPhone</p>
+      <h1 id="hero-title">A personal prayer for wherever you are today.</h1>
+      <p class="lead hero__lead">Share what's on your heart in a short, gentle check-in, and receive a prayer written for you, in warm and reverent words.</p>
+      <div id="download" class="hero__download">
+        <!-- TODO: replace with the real EverPray App Store URL -->
+        <a href="https://apps.apple.com/" class="badge">
+          <img src="assets/app-store-badge.svg" alt="Download EverPray on the App Store" width="168" height="56">
+        </a>
+        <span class="small">Free to download · One prayer a day, always free</span>
+      </div>
+    </div>
+    <div class="phone phone--hero">
+      <div class="phone__screen">
+        <img src="assets/shot-checkin.png" alt="EverPray check-in screen asking “How are you feeling today?” with gentle choices such as Peaceful, Grateful, Tired and Hopeful" width="390" height="844">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section" aria-labelledby="how-title">
+  <div class="container">
+    <div class="section-head" data-fade>
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">No perfect words needed.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step" data-fade>
+        <img src="assets/icon-heart.png" alt="" aria-hidden="true" width="96" height="96" loading="lazy">
+        <span class="step__num">1</span>
+        <h3>Share what's on your heart</h3>
+        <p>How you're feeling, what's weighing on you, what you're asking God for, and who you're praying for.</p>
+      </li>
+      <li class="step" data-fade>
+        <img src="assets/icon-hands.png" alt="" aria-hidden="true" width="96" height="96" loading="lazy">
+        <span class="step__num">2</span>
+        <h3>Receive your prayer</h3>
+        <p>A personal prayer, written for you, in warm and reverent language.</p>
+      </li>
+      <li class="step" data-fade>
+        <img src="assets/icon-remember.png" alt="" aria-hidden="true" width="96" height="96" loading="lazy">
+        <span class="step__num">3</span>
+        <h3>Pray</h3>
+        <p>Take a quiet moment and bring it to God in your own time, then return tomorrow.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- CHRISTIAN & CATHOLIC -->
+<section id="traditions" class="section section--panel" aria-labelledby="trad-title">
+  <div class="container traditions">
+    <div class="traditions__text" data-fade>
+      <p class="eyebrow">Christian &amp; Catholic</p>
+      <h2 id="trad-title">Prayers in the tradition you hold dear.</h2>
+      <p class="traditions__intro">Choose Christian or Catholic mode, and close each prayer the way that feels like home.</p>
+      <div class="modes">
+        <div class="mode mode--christian">
+          <h3>Christian</h3>
+          <ul class="mode__list">
+            <li><img src="assets/icon-bible.png" alt="" aria-hidden="true" width="30" height="30" loading="lazy">End with a Bible verse</li>
+            <li><img src="assets/icon-cross.png" alt="" aria-hidden="true" width="30" height="30" loading="lazy">Or close with the Lord's Prayer</li>
+          </ul>
+        </div>
+        <div class="mode mode--catholic">
+          <h3>Catholic</h3>
+          <ul class="mode__list">
+            <li><img src="assets/icon-bible.png" alt="" aria-hidden="true" width="30" height="30" loading="lazy">A Bible verse or the Lord's Prayer</li>
+            <li><img src="assets/icon-mary.png" alt="" aria-hidden="true" width="30" height="30" loading="lazy">A prayer to the Blessed Mother</li>
+            <li><img src="assets/icon-candle.png" alt="" aria-hidden="true" width="30" height="30" loading="lazy">A prayer with the saint of the day</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="traditions__phone" data-fade>
+      <div class="phone phone--md">
+        <div class="phone__screen">
+          <img src="assets/shot-settings.png" alt="EverPray settings in Catholic mode, with options to include a prayer to the Blessed Virgin Mary, a prayer to a saint, a Bible verse and the Lord’s Prayer" width="390" height="844" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section" aria-labelledby="feat-title">
+  <div class="container">
+    <div class="section-head" data-fade>
+      <p class="eyebrow">Features</p>
+      <h2 id="feat-title">Small helps for a faithful habit.</h2>
+    </div>
+    <div class="showcase" data-fade>
+      <div class="phone phone--sm">
+        <div class="phone__screen">
+          <img src="assets/shot-streak.png" alt="Prayer streak screen showing a 6-day streak and a calendar of days prayed this month" width="780" height="1688" loading="lazy">
+        </div>
+      </div>
+      <figure class="share-card">
+        <img src="assets/share-card.jpg" alt="A prayer shared as an image: Philippians 4:6 over a soft painted sunrise" width="676" height="881" loading="lazy">
+        <figcaption>Shared as an image</figcaption>
+      </figure>
+      <div class="phone phone--sm">
+        <div class="phone__screen">
+          <img src="assets/shot-prayer-log.png" alt="Prayer Log screen listing answered prayers, such as safe travels for our family and help through a difficult week" width="390" height="844" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature" data-fade>
+        <h3>Prayer streak</h3>
+        <p>A quiet count of the days you've come to prayer, to encourage you back tomorrow.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Daily reminders</h3>
+        <p>A gentle nudge at the time you choose: before work, at lunch, or before sleep.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Share as an image</h3>
+        <p>Send a prayer to someone you're praying for, as a simple, beautiful image.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Prayer Log <span class="pro-pill">Pro</span></h3>
+        <p>Keep your intentions in one place, and return to them in prayer over time.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Answered prayers <span class="pro-pill">Pro</span></h3>
+        <p>Mark the prayers you've seen answered, and look back on God's faithfulness.</p>
+      </div>
+      <div class="feature" data-fade>
+        <h3>Export your prayers</h3>
+        <p>Your prayers belong to you. Export all of them whenever you like.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE & PRO -->
+<section id="pro" class="section section--panel" aria-labelledby="pro-title">
+  <div class="container container--plans">
+    <div class="section-head" data-fade>
+      <p class="eyebrow">Free &amp; Pro</p>
+      <h2 id="pro-title">Begin for free. Go deeper with Pro.</h2>
+    </div>
+    <div class="plans">
+      <div class="plan plan--free" data-fade>
+        <h3>Free</h3>
+        <p class="plan__sub">Everything you need to pray each day.</p>
+        <ul class="plan__list">
+          <li>One personal prayer each day</li>
+          <li>A daily prayer to pray anytime</li>
+          <li>Christian or Catholic mode</li>
+          <li>Prayer endings: a Bible verse, the Lord’s Prayer, the Blessed Mother or the saint of the day</li>
+          <li>Your prayer streak and daily reminders</li>
+          <li>Share prayers as text or an image</li>
+          <li>Export all your prayers (PDF, text or spreadsheet)</li>
+          <li>Backup and sync across phones with a free account</li>
+        </ul>
+      </div>
+      <div class="plan plan--pro" data-fade>
+        <div class="plan__head">
+          <h3>EverPray Pro</h3>
+          <span class="trial-pill">7-day free trial</span>
+        </div>
+        <p class="plan__sub">Everything in Free, and more room to pray.</p>
+        <ul class="plan__list">
+          <li>Personal prayers whenever you need them</li>
+          <li>A new version of any prayer</li>
+          <li>Prayer Log for the intentions you’re praying for</li>
+          <li>Answered prayers, with your own notes</li>
+          <li>All your past prayers, ready to reopen</li>
+          <li>Favorites</li>
+          <li>Reflections on your prayer life</li>
+          <li>Gentle reminders to note answered prayers and reflect each month</li>
+        </ul>
+        <p class="plan__fine plan__fine--first">Try Pro free for 7 days, then choose monthly or yearly. The free trial is for first-time subscribers, and you'll need a free EverPray account to subscribe. Prices are shown in the App Store for your country. Cancel anytime in your Apple ID settings.</p>
+        <p class="plan__fine">If Pro ends, nothing is deleted. Your prayers stay saved and reopen if you subscribe again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE BY DESIGN -->
+<section id="privacy" class="privacy" aria-labelledby="priv-title">
+  <div class="privacy__bg" aria-hidden="true">
+    <img src="assets/sky-pale.jpg" alt="" width="1352" height="1420" loading="lazy">
+  </div>
+  <div class="privacy__fade" aria-hidden="true"></div>
+  <div class="privacy__inner" data-fade>
+    <p class="eyebrow">Private by design</p>
+    <h2 id="priv-title">Your prayers are personal.</h2>
+    <p class="privacy__text">We never sell your information or use it for ads, and we don't allow your prayers to be used to train AI.</p>
+    <p class="privacy__link"><a href="privacy.html">Read our Privacy Policy</a></p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="about" data-fade>
+    <p class="eyebrow">About</p>
+    <h2 id="about-title">Why we created EverPray</h2>
+    <p class="about__lead">We created EverPray to make daily prayer feel simpler, more personal, and easier to return to.</p>
+    <p>Sometimes we want to pray, but we’re not quite sure what to say. Or our prayers become rushed and general when there’s actually so much on our hearts. EverPray helps you slow down for a moment, reflect on what you’re carrying, and bring it honestly to God.</p>
+    <p>We also wanted to make it easier to weave Scripture and traditional prayer into everyday life, not as something separate, but as part of a simple daily rhythm.</p>
+    <p>And over time, EverPray helps you look back on the prayers God has answered. In the busyness of life, it can be easy to overlook the graces we’ve already received. Remembering them helps us practice gratitude, recognize God’s goodness, and grow in trust.</p>
+    <p>Our hope is that EverPray makes prayer feel less like one more thing to do, and more like a meaningful part of your day.</p>
+    <div class="signature">
+      <img src="assets/founders-crop.jpg" alt="Leah and Frank, the founders of EverPray" width="96" height="96" loading="lazy">
+      <p>— Leah &amp; Frank</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="cta" data-fade>
+    <img src="assets/cross-clouds.png" alt="" aria-hidden="true" width="120" height="107" loading="lazy">
+    <h2 id="cta-title">Come as you are. Pray today.</h2>
+    <!-- TODO: replace with the real EverPray App Store URL -->
+    <a href="https://apps.apple.com/" class="badge">
+      <img src="assets/app-store-badge.svg" alt="Download EverPray on the App Store" width="168" height="56" loading="lazy">
+    </a>
+  </div>
+</section>
+
 </main>
 
-<footer>
-  <span>© 2026 QuaintInc LLC</span>
-  <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:support@everprayapp.com">support@everprayapp.com</a></span>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <img src="assets/logo.svg" alt="EverPray" width="157" height="44" loading="lazy">
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:support@everprayapp.com">Contact</a>
+    </nav>
+    <div class="site-footer__legal">
+      <p>© 2026 QuaintInc LLC</p>
+      <p>EverPray is made by QuaintInc LLC in Austin, Texas.</p>
+    </div>
+  </div>
 </footer>
+
+</div>
 </body>
 </html>
